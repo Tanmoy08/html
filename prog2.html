@@ -1,0 +1,25 @@
+<html>
+  <script type="text/javascript">
+    var n,i,a,b,c;
+    a=0;
+    b=1;
+    var fib=new Array();
+    n=prompt("Enter the number of terms to display");
+    if(n<=0)
+      alert("Invalid value for n");
+    else if(n==1)
+      document.write(a);
+    else
+    {
+      document.write(a+"<br/>");
+      document.write(b+"<br/>");
+      for(i=3;i<=n;i++)
+      {
+        c=a+b;
+        document.write(c+"<br/>");
+        a=b;
+        b=c;
+      }
+    }
+  </script>
+</html>
