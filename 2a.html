@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Validation</title>
+    <script type="text/javascript">
+      function checkusn()
+       {
+         var myusn=document.getElementById("usn");
+         var mysem=document.getElementById("sem");
+	 if(myusn.value=="" && mysem.value=="")
+	 {
+	    alert("Enter proper usn and semester");
+	    myusn.focus();
+	    return false;
+	 }
+	if(myusn.value=="")
+	 {
+	    alert("Enter proper usn");
+	    myusn.focus();
+	    return false;
+	 }
+	if(mysem.value=="")
+	 {
+	    alert("Enter proper semester");
+	    myusn.focus();
+	    return false;
+	 }
+	 var exp1=/^[1-4][A-Za-z][A-Za-z]\d{2}[A-Za-z][A-Za-z]\d{3}$/;
+         var exp2=/^[1-8]$/;
+	 if(myusn.value.match(exp1)&&mysem.value.match(exp2))
+	 {
+	   document.write("pattern entered is correct for both sem and usn");
+	   return true;
+	 } 
+	  if(myusn.value.match(exp1)&&(!mysem.value.match(exp2)))
+	 {
+	   alert("pattern entered is correct for usn not for sem");
+	   mysem.focus();
+	   mysem.select();
+           return false;
+	 } 
+	if((!myusn.value.match(exp1))&&mysem.value.match(exp2))
+	 {
+	   alert("pattern entered is correct for sem not for usn");
+	   myusn.focus();
+	   myusn.select();
+           return false;
+	 } 
+	 else
+	 {
+	   alert("Enter the correct pattern");
+	   myusn.focus();
+	   myusn.select();
+           return false;
+	 }
+       }
+    </script>
+  </head>
+  <body>
+    <h3>Validation</h3>
+    <form action="" id="myform" >
+      <p>USN:<input type="text" id="usn"/>
+      <br/><br/>
+      <p>Sem:<input type="text" id="sem"/>
+      <br/><br/>
+      <input type="submit" id="submit" value="Submit" onclick="checkusn()"/>
+    </form>
+  </body>
+</html>
