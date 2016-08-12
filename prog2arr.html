@@ -2,22 +2,16 @@
   <script type="text/javascript">
     var n,i,a,b,c;
     var fib=new Array();
-    fib[1]=0;
-    fib[2]=1;
+    fib[0]=0;
+    fib[1]=1;
     n=prompt("Enter the number of terms to display");
     if(n<=0)
       alert("Invalid value for n");
-    else if(n==1)
-      document.write(fib[1]);
-    else
-    {
-      document.write(fib[1]+"<br/>");
-      document.write(fib[2]+"<br/>");
-      for(i=3;i<=n;i++)
+    
+      for(i=2;i<n;i++)
       {
         fib[i]=fib[i-1]+fib[i-2];
-        document.write(fib[i]+"\<br/>");
       }
-    }
+      document.write(fib);
   </script>
 </html>
