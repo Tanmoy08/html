@@ -1,0 +1,24 @@
+<html>
+  <script type="text/javascript">
+    var n,i,a,b,c;
+    a=0;
+    b=1;
+    n=prompt("Enter the number of terms to display");
+    function fib(n)
+     {
+       if(n==0)
+         return 0;
+       if(n==1)
+         return 1;
+       else
+         return (fib(n-1)+fib(n-2));
+     }
+    if(n<=0)
+      alert("Invalid value for n");
+    else
+    {
+      for(i=0;i<n;i++)
+        document.write(fib(i));
+    }
+  </script>
+</html>
