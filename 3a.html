@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>3a.html</title>
+    <style type="text/css">
+    .class1
+    {
+      top:100;
+      left:100;
+      height:300;
+      width:300;
+      border:thick dashed;
+      border-color:green;
+      text-align:center;
+      position:absolute;
+      background-color:red;
+      z-index:0;
+      color:blue;
+    }
+    .class2
+    {
+      top:150;
+      left:150;
+      height:300;
+      width:300;
+      border:thick dotted;
+      border-color:cyan;
+      text-align:center;
+      position:absolute;
+      background-color:yellow;
+      z-index:0;
+      color:blue;
+    }
+    .class3
+    {
+      top:200;
+      left:200;
+      height:300;
+      width:300;
+      border:thick dotted;
+      border-color:green;
+      text-align:center;
+      position:absolute;
+      background-color:grey;
+      z-index:0;
+      color:blue;
+    }
+    </style>
+  </head>
+  <body>
+    <p class="class1" id="p1" onmouseover="display(2,1,0)" onmouseout="display(0,1,2)">
+      welcome cmrit
+    </p>
+    <p class="class2" id="p2" onmouseover="display(0,2,1)" onmouseout="display(0,1,2)">
+      this is web programming lab
+    </p>
+    <p class="class3" id="p3" onmouseover="display(1,0,2)" onmouseout="display(0,1,2)">
+      this is web programming lab
+    </p>
+    <script type="text/javascript">
+      function display(x,y,z)
+      {
+        document.getElementById("p1").style.zIndex=x;
+        document.getElementById("p2").style.zIndex=y;
+        document.getElementById("p3").style.zIndex=z;
+      }
+    </script>
+  </body>
+</html>
