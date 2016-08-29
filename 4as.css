@@ -1,0 +1,32 @@
+student1
+{
+  display:block;
+  color:green;
+  font-size:50;
+  font-style:italic;
+  border:thin dotted;
+  background-color:yellow;
+  text-align:center;
+}
+student2
+{
+  display:block;
+  color:white;
+  font-size:50;
+  font-style:underline;
+  border:thick solid;
+  background-color:black;
+  text-align:center;
+}
+student3
+{
+  display:block;
+  color:blue;
+  font-size:50;
+  font-style:underline;
+  border:thick solid;
+  background-color:maroon;
+  text-align:center;
+  border-color:grey;
+}
+usn,name,branch,college,sem,year{display:block;}
