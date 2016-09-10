@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding="utf-8"?>
+  <?xml-stylesheet href="4as.css" type="text/css"?>
+    <vtu>
+      <student1>
+        <usn>1cr13is107</usn>
+        <name>Tanmoy Paul</name>
+        <branch>ISE</branch>
+        <college>CMRIT</college>
+        <sem>7</sem>
+        <year>2013</year>
+        <email>taul13is@cmrit.ac.in</email>
+      </student>
+      <student2>
+        <usn>1cr13is130</usn>
+        <name>Halam Ram</name>
+        <branch>CSE</branch>
+        <college>CMRIT</college>
+        <sem>7</sem>
+        <year>2013</year>
+        <email>hara13is@cmrit.ac.in</email>
+      </student>
+      <student3>
+        <usn>1cr13is140</usn>
+        <name>Raju Rastogi</name>
+        <branch>ISE</branch>
+        <college>CMRIT</college>
+        <sem>7</sem>
+        <year>2013</year>
+        <email>rara13is@cmrit.ac.in</email>
+      </student>
+    </vtu>  
