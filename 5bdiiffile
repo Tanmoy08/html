@@ -1,0 +1,29 @@
+#filename=5bmod.pl
+
+#!/usr/bin/perl
+use CGI':standard';
+print header();
+print start_html(-title=>"Environment Variables",-bgcolor=>"blue",-text=>"yellow");
+
+	$c=param("com");
+	open CMD ,'-|', $c;
+	print("<pre>");
+	print <CMD>;
+	print("</pre>");
+
+
+print end_html;
+
+
+#filename=5bmod.html
+<html>
+<body>
+<form action="5bmod.pl" method="post">
+<p>
+Enter the unic command<input type="text" name="com"/>
+<br/>
+<input type="submit" value="PRESS"/>
+</p>
+</form>
+</body>
+</html>
